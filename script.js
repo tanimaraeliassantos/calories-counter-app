@@ -27,5 +27,6 @@ function addEntry() {
 			Entry ${entryNumber} Name
 		</label> 
 		<input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name"/>
-		<label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber}</label>`;
+		<label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber}</label>
+		<input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories"/>`;
 }
