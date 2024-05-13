@@ -52,6 +52,7 @@ function calculateCalories(e) {
 	);
 
 	const breakfastCalories = getCaloriesFromInputs(breakfastNumberInputs);
+	const lunchCalories = getCaloriesFromInputs(lunchNumberInputs);
 }
 
 function getCaloriesFromInputs(list) {
