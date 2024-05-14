@@ -35,7 +35,7 @@ function addEntry() {
 function calculateCalories(e) {
 	e.preventDefault();
 	isError = false;
-	
+
 	const dinnerNumberInputs = document.querySelectorAll(
 		`#dinner input[type=number]`
 	);
@@ -59,11 +59,14 @@ function calculateCalories(e) {
 	const exerciseCalories = getCaloriesFromInputs(exerciseNumberInputs);
 	const budgetCalories = getCaloriesFromInputs([budgetNumberInput]);
 
-	if(isError) {
-		return
+	if (isError) {
+		return;
 	}
 
-	const consumedCalories = breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+	const consumedCalories =
+		breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
+	const remainingCalories =
+		budgetCalories - consumedCalories + exerciseCalories;
 }
 
 function getCaloriesFromInputs(list) {
