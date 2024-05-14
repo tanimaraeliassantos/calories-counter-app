@@ -35,6 +35,9 @@ function addEntry() {
 function calculateCalories(e) {
 	e.preventDefault();
 	isError = false;
+	if(isError) {
+		return
+	}
 	const dinnerNumberInputs = document.querySelectorAll(
 		`#dinner input[type=number]`
 	);
