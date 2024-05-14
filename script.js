@@ -73,7 +73,7 @@ function calculateCalories(e) {
 		remainingCalories
 	)} Calorie ${surplusOrDeficit}</span>
 	<hr>
-	<p>${BudgetCalories} Calories Budgeted</p>`;
+	<p>${budgetCalories} Calories Budgeted</p>`;
 }
 
 function getCaloriesFromInputs(list) {
