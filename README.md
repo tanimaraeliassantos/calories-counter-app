@@ -6,10 +6,10 @@ The application was built as a practice project for a JavaScript Algorithms and 
 
 ## Features
 
-- A main screen/town square with three buttons where players can choose which action to take;
-- A store where players can buy health or weapons;
-- A cave where players can fight beasts and gain experience points and or gold (or lose them);
-- A fight dragon button where players can fight the main villain of the game. You can do it!
+- Form for inputting calories and food/exercise names: A user-friendly form that allows users to input the number of calories and the names of foods or exercises. Designed to compute daily calorie intake and expenditure accurately;
+- Add Entry Button that enables users to add new entries dynamically. Each entry updates the interface in real-time, ensuring that users can easily manage and review their daily entries;
+- Calculate remaining calories button that computes whether users are in a calorie deficit or surplus. This calculation is based on all inputs entered into the form. The result is displayed dynamically, helping users track their progress toward their daily calorie goals;
+- Clear button that allows users to reset the form, clearing all entries and calculations. This feature provides users with a fresh start for a new day or session;
 
 ## Technologies
 
