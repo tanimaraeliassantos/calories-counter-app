@@ -23,9 +23,8 @@ function addEntry() {
 	);
 	const entryNumber =
 		targetInputContainer.querySelectorAll('input[type="text"]').length + 1;
-	const HTMLString = `<label for="${entryDropdown.value}-${entryNumber}-name">
-			Entry ${entryNumber} Name
-		</label> 
+	const HTMLString = `
+	<label for="${entryDropdown.value}-${entryNumber}-name"> Entry ${entryNumber} Name </label> 
 		<input type="text" placeholder="Name" id="${entryDropdown.value}-${entryNumber}-name"/>
 		<label for="${entryDropdown.value}-${entryNumber}-calories">Entry ${entryNumber}</label>
 		<input type="number" min="0" placeholder="Calories" id="${entryDropdown.value}-${entryNumber}-calories"/>`;
@@ -67,7 +66,7 @@ function calculateCalories(e) {
 		breakfastCalories + lunchCalories + dinnerCalories + snacksCalories;
 	const remainingCalories =
 		budgetCalories - consumedCalories + exerciseCalories;
-	const surplusOrDeficit = remainingCalories < 0 ? 'Surplus' : "Deficit'";
+	const surplusOrDeficit = remainingCalories < 0 ? 'Surplus' : "Deficit";
 
 	output.innerHTML = `<span class="${surplusOrDeficit.toLowerCase()}">${Math.abs(
 		remainingCalories
